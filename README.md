@@ -9,7 +9,7 @@
 </p>
 <div align="center">
   <h1>
-    Clerk and Next.js App Router Quickstart
+    Clerk and Next.js App Router Quickstart Demo App
   </h1>
   <a href="https://www.npmjs.com/package/@clerk/clerk-js">
     <img alt="Downloads" src="https://img.shields.io/npm/dm/@clerk/clerk-js" />
@@ -29,38 +29,34 @@
 
 Clerk is a developer-first authentication and user management solution. It provides pre-built React components and hooks for sign-in, sign-up, user profile, and organization management. Clerk is designed to be easy to use and customize, and can be dropped into any React or Next.js application.
 
-After following the quickstart you'll have learned how to:
-
-- Install `@clerk/nextjs`
-- Add `clerkMiddleware()`
-- Add `<ClerkProvider />` and Clerk components
-- Create your first user
+Learn how to create your first user with this quickstart demo app.
 
 ## Deploy
 
 Easily deploy the template to Vercel with the button below. You will need to set the required environment variables in the Vercel dashboard.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fclerk%2Fclerk-nextjs-app-quickstart&env=NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY,CLERK_SECRET_KEY&envDescription=Clerk%20API%20keys&envLink=https%3A%2F%2Fclerk.com%2Fdocs%2Fquickstart%2Fnextjs&redirect-url=https%3A%2F%2Fclerk.com%2Fdocs%2Fquickstart%2Fnextjs)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fclerk%2Fclerk-nextjs-quickstart-demo-app&env=NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY,CLERK_SECRET_KEY&envDescription=Clerk%20API%20keys&envLink=https%3A%2F%2Fclerk.com%2Fdocs%2Fquickstart%2Fnextjs&redirect-url=https%3A%2F%2Fclerk.com%2Fdocs%2Fquickstart%2Fnextjs)
 
 ## Running the template
 
 ```bash
-git clone https://github.com/clerk/clerk-nextjs-app-quickstart
+git clone https://github.com/clerk/clerk-nextjs-quickstart-demo-app
 ```
+
+> Note: Node v22+ is required.
 
 To run the example locally, you need to:
 
-1. `npm install` the required dependencies. You may need to use `--force` to handle dependency issues from the React release candidate.
+1. `npm install` the required dependencies.
 1. `npm run dev` to launch the development server.
-1. Select the "Sign in" button in the top-right corner of the app's homepage.
+1. Visit the app's homepage to sign up.
 
 ## Learn more
 
 To learn more about Clerk and Next.js, check out the following resources:
 
-- [Quickstart: Get started with Next.js and Clerk](https://clerk.com/docs/quickstarts/nextjs?utm_source=DevRel&utm_medium=docs&utm_campaign=templates&utm_content=clerk-nextjs-app-quickstart)
-
-- [Clerk Documentation](https://clerk.com/docs?utm_source=DevRel&utm_medium=docs&utm_campaign=templates&utm_content=clerk-nextjs-app-quickstart)
+- [Quickstart: Get started with Next.js and Clerk](https://clerk.com/docs/quickstarts/nextjs?utm_source=DevRel&utm_medium=docs&utm_campaign=templates&utm_content=nextjs-quickstart-demo-app)
+- [Clerk Documentation](https://clerk.com/docs?utm_source=DevRel&utm_medium=docs&utm_campaign=templates&utm_content=nextjs-quickstart-demo-app)
 - [Next.js Documentation](https://nextjs.org/docs)
 
 ## Found an issue or want to leave feedback
