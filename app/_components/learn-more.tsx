@@ -55,7 +55,7 @@ export function LearnMore() {
       <div className='mx-auto w-full gap-8 pt-16 pb-24 md:grid md:max-w-300 md:grid-cols-[1fr_3fr]'>
         <div>
           <span className='text-[0.8125rem]/5 font-medium text-[#6C47FF]'>
-            What's next
+            What&apos;s next
           </span>
           <h2 className='mt-2 mb-3 text-xl/[1.625rem] font-semibold tracking-tight text-[#131316]'>
             Learn more from our&nbsp;resources

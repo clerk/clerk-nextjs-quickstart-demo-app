@@ -5,6 +5,9 @@ import { CodeSwitcher } from '../_components/code-switcher';
 import { UserDetails } from '../_components/user-details';
 import { LearnMore } from '../_components/learn-more';
 
+// Keep the sign-in redirect in the initial response for this protected route.
+export const instant = false;
+
 export default async function Page() {
   // Check if the user requesting this page is authenticated (signed in) and if not, require authentication before allowing access
   // See here for information https://clerk.com/docs/references/nextjs/auth#protect-pages-and-routes

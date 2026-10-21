@@ -1,6 +1,7 @@
 'use client';
 
 import { useOrganization, useSession, useUser } from '@clerk/nextjs';
+import Image from 'next/image';
 
 function Row({
   desc,
@@ -68,7 +69,14 @@ export function UserDetails() {
       <div className='max-w-[25rem] rounded-xl bg-white p-8 shadow-[0_5px_15px_rgba(0,0,0,0.08),0_15px_35px_-5px_rgba(25,28,33,0.2)] ring-1 ring-gray-950/5'>
         <div className='mb-6 flex flex-col items-center gap-2'>
           <div className='relative flex w-full justify-center'>
-            <img src={user.imageUrl} className='size-20 rounded-full' />
+            <Image
+              src={user.imageUrl}
+              alt={user.fullName ? `${user.fullName}'s avatar` : 'User avatar'}
+              width={80}
+              height={80}
+              unoptimized
+              className='size-20 rounded-full'
+            />
             <div className='absolute top-1/2 left-full hidden w-fit -translate-x-2.5 -translate-y-1/2 items-center gap-5 md:flex'>
               <div className='relative'>
                 <div className='h-px w-[6.5rem] bg-[#BFBFC4]' />
