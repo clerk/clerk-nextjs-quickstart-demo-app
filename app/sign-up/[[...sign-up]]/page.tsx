@@ -43,7 +43,7 @@ export default function Page() {
           </div>
         </div>
 
-        <Suspense fallback={null}>
+        <Suspense>
           <SignUp
             signInUrl='/sign-in'
             forceRedirectUrl='/dashboard'
