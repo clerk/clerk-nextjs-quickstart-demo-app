@@ -1,8 +1,5 @@
-import { cacheLife } from 'next/cache';
-
 export async function Footer() {
   'use cache';
-  cacheLife('days');
   return (
     <footer className='min-[2500px]::max-w-[50rem] flex w-full flex-col flex-wrap items-start border-t border-[#EEEEF0] bg-white pt-6 pr-6 pb-9 pl-6 md:flex-row md:flex-nowrap md:justify-between xl:mx-auto'>
       <div className='mr-auto ml-auto flex justify-start md:w-2/3'>
