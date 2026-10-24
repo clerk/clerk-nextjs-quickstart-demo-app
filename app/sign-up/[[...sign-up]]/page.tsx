@@ -2,7 +2,7 @@
 
 import { SignUp, useAuth } from '@clerk/nextjs';
 import { useRouter } from 'next/navigation';
-import { useEffect } from 'react';
+import { Suspense, useEffect } from 'react';
 import { ClerkLogo } from '../../_components/clerk-logo';
 
 export default function Page() {
@@ -35,7 +35,7 @@ export default function Page() {
               Auth starts here
             </h1>
             <p className='max-w-[30rem] pt-3 text-[1.0625rem] text-[#5E5F6E]'>
-              This is Clerk's <code>{`<SignUp />`}</code> component.
+              This is Clerk&apos;s <code>{`<SignUp />`}</code> component.
             </p>
             <p className='max-w-[30rem] text-[1.0625rem] text-[#5E5F6E]'>
               Give it a try by signing up as your first user.
@@ -43,11 +43,13 @@ export default function Page() {
           </div>
         </div>
 
-        <SignUp
-          signInUrl='/sign-in'
-          forceRedirectUrl='/dashboard'
-          unsafeMetadata={{ source: 'nextjs-quickstart-demo-app' }}
-        />
+        <Suspense>
+          <SignUp
+            signInUrl='/sign-in'
+            forceRedirectUrl='/dashboard'
+            unsafeMetadata={{ source: 'nextjs-quickstart-demo-app' }}
+          />
+        </Suspense>
       </div>
     </main>
   );

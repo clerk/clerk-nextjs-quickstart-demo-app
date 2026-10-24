@@ -25,22 +25,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider
-      appearance={{
-        cssLayerName: 'clerk',
-      }}
-      afterSignOutUrl='/sign-in'
-      signInForceRedirectUrl='/dashboard'
-      signUpForceRedirectUrl='/dashboard'
-      signInUrl='/sign-in'
-      signUpUrl='/sign-up'
-    >
-      <html lang='en' className={`${geistSans.variable} ${geistMono.variable}`}>
-        <body className='bg-neutral-50 antialiased'>
+    <html lang='en' className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className='bg-neutral-50 antialiased'>
+        <ClerkProvider
+          appearance={{
+            cssLayerName: 'clerk',
+          }}
+          afterSignOutUrl='/sign-in'
+          signInForceRedirectUrl='/dashboard'
+          signUpForceRedirectUrl='/dashboard'
+          signInUrl='/sign-in'
+          signUpUrl='/sign-up'
+        >
           {children}
-          <Footer />
-        </body>
-      </html>
-    </ClerkProvider>
+        </ClerkProvider>
+        <Footer />
+      </body>
+    </html>
   );
 }
